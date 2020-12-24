@@ -15,19 +15,32 @@ const App = () => {
 
   return (
     <div>
-      <ul>
+      <table class='table table-hover'>
+        <thead>
+          <tr class='table-primary'>
+            <th scope='col'>Brand Name</th>
+            <th scope='col'>Color</th>
+            <th scope='col'>Fasten Type</th>
+            <th scope='col'>Manufacturer</th>
+            <th scope='col'>Material</th>
+            <th scope='col'>Shoe Type</th>
+            <th scope='col'>Size</th>
+          </tr>
+        </thead>
         {shoeList.map((shoe) => (
-          <div key={shoe.id}>
-            <li>Brand Name: {shoe.brand_name}</li>
-            <li>Color: {shoe.color}</li>
-            <li>Fasten Type: {shoe.fasten_type}</li>
-            <li>Manufacturer: {shoe.manufacturer}</li>
-            <li>Material: {shoe.material}</li>
-            <li>Shoe Type: {shoe.shoe_type}</li>
-            <li>Size: {shoe.size}</li>
-          </div>
+          <tbody key={shoe.id}>
+            <tr class='table-success'>
+              <td>{shoe.brand_name}</td>
+              <td>{shoe.color}</td>
+              <td>{shoe.fasten_type}</td>
+              <td>{shoe.manufacturer}</td>
+              <td>{shoe.material}</td>
+              <td>{shoe.shoe_type}</td>
+              <td>{shoe.size}</td>
+            </tr>
+          </tbody>
         ))}
-      </ul>
+      </table>
     </div>
   );
 };
