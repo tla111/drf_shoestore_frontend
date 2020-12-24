@@ -17,7 +17,7 @@ const App = () => {
     <div>
       <table class='table table-hover'>
         <thead>
-          <tr class='table-primary'>
+          <tr class='table-dark'>
             <th scope='col'>Brand Name</th>
             <th scope='col'>Color</th>
             <th scope='col'>Fasten Type</th>
@@ -29,7 +29,7 @@ const App = () => {
         </thead>
         {shoeList.map((shoe) => (
           <tbody key={shoe.id}>
-            <tr class='table-success'>
+            <tr class='table-info'>
               <td>{shoe.brand_name}</td>
               <td>{shoe.color}</td>
               <td>{shoe.fasten_type}</td>
