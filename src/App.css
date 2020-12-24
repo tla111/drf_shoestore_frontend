@@ -6,15 +6,12 @@
 
 ul {
   border: 1px solid black;
-  height: 100px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 li {
-  color: blue;
   font-size: 18px;
   list-style: none;
 }
