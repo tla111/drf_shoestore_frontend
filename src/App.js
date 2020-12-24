@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootswatch/dist/darkly/bootstrap.min.css';
 
 const App = () => {
   const [shoeList, setShoeList] = useState([]);
@@ -17,7 +18,7 @@ const App = () => {
     <div>
       <table class='table table-hover'>
         <thead>
-          <tr class='table-dark'>
+          <tr class='table-success'>
             <th scope='col'>Brand Name</th>
             <th scope='col'>Color</th>
             <th scope='col'>Fasten Type</th>
